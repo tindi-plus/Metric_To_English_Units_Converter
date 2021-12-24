@@ -5,10 +5,10 @@
 ## Introduction
 This is a program that converts Metric units to their English counterparts. It can also convert from English to Metric Units.
 
-# Installation
+## Installation
 The program uses Pandas and Python's regular expression library re. If you do not already have pandas installed, you can install it from [Pypi](https://pypi.org/project/pandas/) by running ***pip install pandas*** on your command line. The ***re*** library is aleady installed with python installation. 
 
-# Description
+## Description
 To use the program, the input must be in the following format: ***How many inches are in 10 meters?*** Also, all units in the input must be in plural, for example, it is inches and not inch, even when you are referring to 1 inch. Currently, the program supports the following units conversions:
   * Length: The following table shows the table and the conversion constants. The conversion constant is located at the intersection of the row and a column. For example, the conversion constant for yards to centimeters is 91.44.
   
@@ -18,6 +18,17 @@ To use the program, the input must be in the following format: ***How many inche
                                                       | yards  | 914.4       | 91.44       | 0.9144 | 0.0009144  |
                                                       | feet   | 304.8       | 30.48       | 0.3048 | 0.0003048  |               
                                                       
-  * 
+  * Weight: The following table shows tha conversion constants for weight.
+                                                      
+                                                      |          |  Grams   | Kilograms |
+                                                      | -------- | -------- | --------- |
+                                                      | pounds   |  453.592 | 0.453592  |
+                                                      
+  * Volume: The table below shows the conversion constants for volume.
+                                                      
+                                                      |         | milliliters |   Litres   |
+                                                      | ------- | ----------- | ---------- |
+                                                      | Quarts  |   1136.52   |   1.13652  |
+                                                      
 
-Authors And 
+When an input is made, the program checks to verify that the conversion between the units specified is valid. If the units are not compatible, it displays a message saying that the units' conversion is not valid. 
